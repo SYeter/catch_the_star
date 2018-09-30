@@ -1,0 +1,7 @@
+  <launch>
+          
+    <node pkg="catch_the_star" type="keystroke_subscriber.py"
+          name="keystroke_subscriber" output="screen" launch-prefix="xterm -e"/>
+    <node pkg="catch_the_star" type="keystroke_publisher.py"
+          name="keystroke_publisher" />
+  </launch>
