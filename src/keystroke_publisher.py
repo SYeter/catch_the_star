@@ -18,10 +18,6 @@ def getchar():
    finally:
       termios.tcsetattr(fd, termios.TCSADRAIN, old_settings)
    return ch
-   
-#while 1:
-    #ch = getchar()
-#print 'You pressed', ch
 
 rospy.init_node('keystroke_publisher')
 keyPub = rospy.Publisher('/keystroke',Num,queue_size = 0)
